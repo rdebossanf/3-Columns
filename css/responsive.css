@@ -37,15 +37,15 @@
 @media only screen and (max-width: 559px) {
  .container-main {
   margin-top: 40px;
+  height: 100%;
  }
  .container {
   width: 270px;
   height: 410px;
-  margin: 0;
- }
+}
  h1 {
   font-size: 30px;
-  margin: -10px 0 20px 40px;
+  margin: -10px 0 20px 20px;
   text-transform: uppercase;
   color: hsl(0, 0%, 95%);
   font-family: 'Lexend Deca', sans-serif;
