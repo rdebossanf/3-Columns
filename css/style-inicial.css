@@ -1,11 +1,10 @@
 .container-main {
   display: flex;
   flex-wrap: wrap;
+  background: hsl(0, 0%, 95%);
   width: 100%;
-  height: 550px;
+  height: 100vh;
   justify-content: center;
-  align-items: center;
-  margin-top: 100px;
 }
 .container{
   width: 306px;
@@ -19,7 +18,6 @@
   font-size: 16px;
   letter-spacing: .1em;
   color:hsl(31, 77%, 52%);
-  padding: 12px;
   font-family: 'Lexend Deca', sans-serif;
 }
 .cor-p1:hover {
@@ -32,8 +30,7 @@
   font-size: 16px;
   letter-spacing: .1em;
   color: hsl(184, 100%, 22%);
-  padding: 12px;
-  margin-top: 20px;
+  margin-top: 30px;
   font-family: 'Lexend Deca', sans-serif;
 }
 .cor-p2:hover {
@@ -46,28 +43,27 @@
   font-size: 16px;
   letter-spacing: .1em;
   color: hsl(179, 100%, 13%);
-  padding: 12px;
   font-family: 'Lexend Deca', sans-serif;
 }
 .cor-p3:hover {
   color:hsl(0, 0%, 95%);
 }
 img {
-  margin: 40px 0 40px 40px;
+  margin: 40px 0 30px 40px;
 }
 h1 {
   font-size: 30px;
-  margin: 0 0 40px 40px;
+  margin: 0 0 30px 40px;
   text-transform: uppercase;
   color: hsl(0, 0%, 95%);
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: 'Big Shoulders Display', cursive;
 }
 div > p {
-  font-size: 18px;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
   color:hsla(0, 0%, 100%, 0.75);
-  margin: 0 60px 40px 40px;
-  letter-spacing: .1em;
-  line-height: 25px;
+  margin: 0 45px 40px 40px;
+  line-height: 26px;
 }
 .border-left {
   border-radius: 10px 0 0 10px;
@@ -78,13 +74,97 @@ div > p {
 button {
   width: 145px;
   height: 45px;
-  margin: 20px 0 0 40px;
+  margin: 40px 0 0 40px;
   border-radius: 50px;
+  cursor: pointer;
   background-color: hsl(0, 0%, 95%);
-  border: none;
+  border: 2px solid hsl(0, 0%, 95%); 
 }
 button:hover {
-  cursor: pointer;
   border: 2px solid hsl(0, 0%, 95%); 
   background-color: transparent;
 }
+
+/* Reset */
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+/* Responsive */
+/* Estilo para Tablets */
+@media only screen and (min-width: 630px) and (max-width: 920px){
+  .div1, .div2 {
+    margin-top: 20px;
+  }
+  .div3{
+    margin-bottom: 50px;
+  }
+ img {
+  margin: 40px 0 30px 40px;
+ }
+ h1 {
+  font-size: 30px;
+  margin: 0px 0 30px 40px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+ }
+ button {
+  margin: 40px 0 0 40px;
+ }
+ div > p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color:hsla(0, 0%, 100%, 0.75);
+  margin: 0 45px 40px 40px;
+  line-height: 26px;
+ }
+ .border_tablet-right {
+  border-radius: 0 10px 10px 0px;
+ }
+ .border_tablet-bottom {
+  border-radius: 0 0 10px 10px;
+ }
+}
+
+
+/* Estilo para smartphone */
+@media only screen and (max-width: 629px) {
+ .container-main {
+  /* padding-top: 30px; */
+  height: 100%;
+ }
+ .div1 {
+  margin-top: 30px;
+}
+.div3{
+  margin-bottom: 30px;
+}
+ h1 {
+  font-size: 30px;
+  margin: 0px 0 30px 40px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+ }
+ div > p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+  color:hsla(0, 0%, 100%, 0.75);
+  margin: 0 45px 40px 40px;
+  line-height: 26px;
+ }
+ .border_tablet-left {
+  border-radius: 10px 10px 0 0;
+ }
+ .border_tablet-bottom {
+  border-radius: 0 0px 10px 10px;
+}
+ button {
+  margin: 40px 0 0 40px;
+ }
+}
+
